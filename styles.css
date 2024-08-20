@@ -1,11 +1,116 @@
-.container {
-	max-width: 800px;
-	margin 0 auto;
-	padding 0 20px;
+body {
+    background-color: #af7a6d;
+    margin: 0; /* optional, removes default margin */
+    font-family: JetBrains Mono;
 }
 
-.legend-left
+.topbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #000;
+    max-width: 800px;
+    margin: 0 auto; /* Centers the topbar-content */
+    padding: 0;
+}
+
+.navbar-logo-container {	
+    border: none;
+    display: flex;	
+    margin: 20px;
+    font-family: montserrat;
+    padding: 5px 10px;
+}
+
+.navbar-buttons {
+    border: none;
+    display: flex;
+    align-items: center;	
+    margin: 20px;
+    font-family: montserrat;
+    padding: 5px 10px;
+
+}
+
 .navbar-title-link {
-	text-decoration: none;
-	font-family: JetBrains Mono;
+    color: #653239;
+    text-decoration: none;
+    font-family: JetBrains Mono;
+}
+
+.nav {
+    display: flex;
+    justify-content: center; /* Centers the nav items horizontally */
+    max-width: 800px; /* Same width as topbar-content */
+    margin: 20px auto; /* Centers the nav and adds space above */
+    font-family: montserrat;
+}
+
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav ul li {
+    margin-right: 20px;
+}
+
+.nav ul li:last-child {
+    margin-right: 0;
+}
+
+.nav ul li a, .resources-container a {
+    text-decoration: none;
+    color: #ccc7b9;
+}
+
+.navbar-logo-container a, .navbar-buttons a, .archive-container a {
+    text-decoration: none;
+    color: #ccc7b9;
+}
+
+.navbar-logo-container a:hover, .navbar-buttons a:hover,
+.archive-container a:hover, .nav a:hover, .resources-container a:hover {
+    color: #e2d4ba;
+}
+
+main {  
+    max-width: 800px;
+    margin: 20px auto;
+    font-family: JetBrains Mono;
+}
+
+.container, .second-container, .third-container {
+    display: block; /* ensures each container is treated as a block-level element */
+    border: 1px solid #000;
+    max-width: 800px;
+    margin: 20px auto; /* centers the containers and adds space between them */
+    padding: 20px; /* optional: Adds padding inside the containers */
+}
+
+.featured-recipe, .cooking-tips, .latest-updates {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.archive-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* creates 3 equal-width columns */
+    gap: 20px; /* adds space between the grid items */
+    max-width: 800px;
+    margin: 20px auto; /* centers the container and adds space above */
+    padding: 20px;
+}
+
+.archive-container div {
+    border: 1px solid #000;
+    text-align: center; /* centers the image and text inside each grid item */
+}
+
+.archive-container img {
+    width: 100%;
+    height: auto;
 }

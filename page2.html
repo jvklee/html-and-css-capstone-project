@@ -2,42 +2,59 @@
 <html lang="en-US">
 <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
     <title>subscribe | savor the newsletter</title>
 </head>
 <body>
-    <header>
-        <header>
-            <h2>savor the newsletter</h2>
+    <div class="topbar-content">
 
-    <nav>
-        <a href="page1.html">home</a>
-        <a href="page2.html">subscribe</a>
-        <a href="page3.html">links</a>
-        <a href="page4.html">archive</a>
-    </nav>
-</header>
+        <div class="navbar-logo-container">
+            <a href="#"><img src="#" alt="logo-img"></a>
+        </div>
 
-<section>
+        <div class="navbar-title">
+            <h3 class="navbar-title-link">
+                <a href="/" native="true" class="navbar-title-link">savor the newsletter</a>
+            </h3>
+        </div>
+
+        <div class="navbar-buttons">
+            <a href="#">sign in</a>
+        </div>
+</div>
+
+<div class="nav">
+    <ul>
+        <li><a href="page1.html">home</a></li>
+        <li><a href="page2.html">subscribe</a></li>
+        <li><a href="page3.html">links</a></li>
+        <li><a href="page4.html">archive</a></li>
+    </ul>
+</div>
+
+<main>
+    <div class="container">
     <h1>subscribe to our newsletter</h1>
-</section>
 
-<form action="submit-form.html" method="post">
-    <fieldset>
-        <legend>subscription form</legend>
-        <label for="name">name:</label>
-        <input type="text" id="name" name="name"><br><br>
+    <form action="submit-form.html" method="post">
+        <fieldset>
+            <legend>subscription form</legend>
+            <label for="name">name:</label>
+            <input type="text" id="name" name="name"><br><br>
 
-        <label for="email">email:</label>
-        <input type="text" id="email" name="email"><br><br>
+            <label for="email">email:</label>
+            <input type="text" id="email" name="email"><br><br>
 
-        <label for="fav-recipe">fav recipe:</label>
-        <textarea id="fav-recipe" name="fav-recipe"></textarea><br><br>
+            <label for="fav-recipe">fav recipe:</label>
+            <textarea id="fav-recipe" name="fav-recipe"></textarea><br><br>
 
-        <label for="subscribe">subscribe to savor the newsletter:</label>
-        <input type="checkbox" id="subscribe" name="subscribe"><br><br>
+            <label for="subscribe">subscribe to savor the newsletter:</label>
+            <input type="checkbox" id="subscribe" name="subscribe"><br><br>
 
-        <button type="submit">subscribe</button>
-    </fieldset>
-</form>
+            <button type="submit">subscribe</button>
+        </fieldset>
+    </form>
+    </div>
+</main>
 </body>
 </html>
