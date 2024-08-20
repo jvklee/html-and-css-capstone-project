@@ -52,7 +52,7 @@ font color:
 
 page 1
 "home"
-nav-bar = home, submit recipe, links, archive
+nav-bar = home, subscribe, links, archive
 h1 = "welcome to ___"
 h2 = "introduction"
 text "welcome..."
@@ -63,18 +63,16 @@ text "don't miss out..."
 image
 
 page 2
-"submit recipe"
+"subscribe"
 nav-bar
-h1 = "submit your recipe"
+h1 = "subscribe to our newsletter
 form
 fieldset
-legend = "recipe submission"
+legend = "subscription form
 input name
 input email
-input recipe name
-input ingredients
-textarea
 checkbox newsletter
+textarea comments
 button submit
 
 page 3
@@ -88,14 +86,14 @@ page 4
 nav-bar
 h1 = "recipe archive"
 image 1 linking to new window
-short description
+quick description
 image 2 linking to new window
-short description
+quick description
 image 3 linking to new window
-short description
+quick description
 image 4 linking to new window
-short description
+quick description
 image 5 linking to new window
-short description
+quick description
 image 6 linking to new window
-short description
+quick description
