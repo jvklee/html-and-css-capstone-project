@@ -1,15 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap');
+
+
 body {
-    background-color: #af7a6d;
+    background-color: #eee4e1;
+    color: #653239;
     margin: 0; /* optional, removes default margin */
     font-family: JetBrains Mono;
 }
 
 .topbar-content {
+    background-color: #eee4e1;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid #000;
-    max-width: 800px;
     margin: 0 auto; /* Centers the topbar-content */
     padding: 0;
 }
@@ -18,8 +21,11 @@ body {
     border: none;
     display: flex;	
     margin: 20px;
-    font-family: montserrat;
+    font-family: sans-serif;
     padding: 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.2px;
 }
 
 .navbar-buttons {
@@ -27,9 +33,11 @@ body {
     display: flex;
     align-items: center;	
     margin: 20px;
-    font-family: montserrat;
+    font-family: sans-serif;
     padding: 5px 10px;
-
+    letter-spacing: 0.2px;
+    font-size: 14px;
+    font-weight: bold;
 }
 
 .navbar-title-link {
@@ -40,10 +48,13 @@ body {
 
 .nav {
     display: flex;
-    justify-content: center; /* Centers the nav items horizontally */
-    max-width: 800px; /* Same width as topbar-content */
-    margin: 20px auto; /* Centers the nav and adds space above */
-    font-family: montserrat;
+    justify-content: center; /* centers the nav items horizontally */
+    margin: 20px auto; /* centers the nav and adds space above */
+    font-family: sans-serif;
+    font-size: 14px;
+    border: 0.5px solid #dfccb9;
+    background-color: #eee4e1;
+    letter-spacing: 0.2px;
 }
 
 .nav ul {
@@ -61,52 +72,147 @@ body {
     margin-right: 0;
 }
 
-.nav ul li a, .resources-container a {
+.nav ul li a,
+.navbar-logo-container a, .navbar-buttons a,
+.container a, .resources-container a,
+.archive-container a {
     text-decoration: none;
-    color: #ccc7b9;
+    color: #65503e;
 }
 
-.navbar-logo-container a, .navbar-buttons a, .archive-container a {
-    text-decoration: none;
-    color: #ccc7b9;
-}
-
-.navbar-logo-container a:hover, .navbar-buttons a:hover,
-.archive-container a:hover, .nav a:hover, .resources-container a:hover {
-    color: #e2d4ba;
+.nav a:hover, .navbar-logo-container a:hover,
+.navbar-buttons a:hover, .container a:hover,
+.resources-container a:hover, 
+.archive-container a:hover {
+    color: #e9dcd8;
 }
 
 main {  
-    max-width: 800px;
+    max-width: 1300px;
+    background-color: #eee4e1;
     margin: 20px auto;
+    font-family: sans-serif;
+    font-color: #653239;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+}
+
+main h1 {
+    text-align: center;
+    font-family: JetBrains Mono;
+}
+
+h2 {
     font-family: JetBrains Mono;
 }
 
 .container, .second-container, .third-container {
     display: block; /* ensures each container is treated as a block-level element */
-    border: 1px solid #000;
-    max-width: 800px;
     margin: 20px auto; /* centers the containers and adds space between them */
     padding: 20px; /* optional: Adds padding inside the containers */
+    text-align: center;
 }
 
-.featured-recipe, .cooking-tips, .latest-updates {
+.featured-recipe {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;  
+    gap: 55px; 
+}
+
+.cooking-tips, .latest-updates {
+    display: flex;
+    flex-direction: column;
+}
+
+.featured-recipe-img {
+   border: 0.5px solid #fff;
+   padding: 75px 125px;
+   margin-bottom: 15px;
+   display: block;
+}
+
+
+
+.subscription-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+fieldset {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+label {
+    margin-bottom: 5px;
+    color: #653239;
+    font-weight: 500;
+    font-family: JetBrains Mono;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 0.5px solid #653239;
+    border-radius: 5px;
+    font-size: 13px;
+    box-sizing: border-box;
+    background-color:#e9dcd8;
+    color: #65503e !important;
+    font-family: sans-serif !important;
+    letter-spacing:0.5px;
+}
+
+textarea {
+    height: 60px;
+    resize: none;
+    color: #653239;
+    font-family: sans-serif;
+    letter-spacing: 0.5px;
+}
+
+input[type="checkbox"] {
+    margin-right: 40px;
+}
+
+button[type="submit"] {
+    background-color: #67503c;
+    color: #98785d;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: sans-serif;
+}
+
+button[type="submit"]:hover {
+    background-color: #4c3c2f;
+}
+
+.resources-container {
+    padding: 20px;
 }
 
 .archive-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* creates 3 equal-width columns */
     gap: 20px; /* adds space between the grid items */
-    max-width: 800px;
+    max-width: 900px;
     margin: 20px auto; /* centers the container and adds space above */
     padding: 20px;
 }
 
 .archive-container div {
-    border: 1px solid #000;
+    border: 0.5px solid #653239;
     text-align: center; /* centers the image and text inside each grid item */
 }
 
